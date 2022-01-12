@@ -1,0 +1,46 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<body>
+  <form>
+    <th:block th:fragment="select (label, name, items)">
+      <div th:with="valid=${!#fields.hasErrors(name)}"
+        th:class="${'form-group' + (valid ? '' : ' has-error')}"
+        class="form-group">
+        <label class="col-sm-2 control-label" th:text="${label}">Label</label>
+
+        <div  class="col-sm-10"  >
+          <div th:switch="${items}">
+            <p th:case="${types}">
+              <select th:field="*{__${name}__}">
+                <option th:each="type : ${types}" th:value="${type}"
+                        th:text="${type}">lable</option>
+              </select>
+            </p>
+            <p th:case="${vets}">
+              <select th:field="*{__${name}__}">
+                <option th:each="vet : ${vets}" th:value="${vet.id}"
+                        th:text="${vet.getFirstName() + ' ' + vet.getLastName()}">Lable</option>
+              </select>
+            </p>
+            <p th:case="${owner.pets}">
+              <select th:field="*{__${name}__}">
+                <option th:each="pet : ${owner.pets}" th:value="${pet.id}"
+                        th:text="${pet.getName}">Lable</option>
+              </select>
+            </p>
+          </div>
+
+          <span th:if="${valid}"
+            class="fa fa-ok form-control-feedback"
+            aria-hidden="true"></span>
+          <th:block th:if="${!valid}">
+            <span
+              class="fa fa-remove form-control-feedback"
+              aria-hidden="true"></span>
+            <span class="help-inline" th:errors="*{__${name}__}">Error</span>
+          </th:block>
+        </div>
+      </div>
+    </th:block>
+  </form>
+</body>
+</html>
