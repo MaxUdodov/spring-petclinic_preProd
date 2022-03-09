@@ -4,6 +4,8 @@
 
   <body>
 
+
+
     <h2 th:text="#{welcome}">Welcome</h2>
     <div class="row">
         <div class="col-md-12">
@@ -11,12 +13,7 @@
         </div>
     </div>
 
-    <div>
-      <form action="/logout" method="post">
-        <!--      <input type="hidden" name="_csrf" value="{{_csrf.token}}" />-->
-        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
-        <input type="submit" value="Sign Out"/>
-      </form>
-    </div>
+
   </body>
+
 </html>
