@@ -29,9 +29,6 @@ import java.util.Locale;
  * PropertyEditors. See the following links for more details: - The Spring ref doc:
  * https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html#format
  *
- * @author Mark Fisher
- * @author Juergen Hoeller
- * @author Michael Isvy
  */
 @Component
 public class PetTypeFormatter implements Formatter<PetType> {

@@ -23,7 +23,6 @@ import org.springframework.samples.petclinic.model.NamedEntity;
 /**
  * Models a {@link Vet Vet's} specialty (for example, dentistry).
  *
- * @author Juergen Hoeller
  */
 @Entity
 @Table(name = "specialties")

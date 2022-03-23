@@ -6,6 +6,7 @@ import java.util.Set;
 @Entity
 @Table(name = "user")
 public class User {
+
 	@Id
 	@GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
 	private Long id;

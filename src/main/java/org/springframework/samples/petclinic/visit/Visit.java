@@ -29,8 +29,6 @@ import java.time.LocalDate;
 /**
  * Simple JavaBean domain object representing a visit.
  *
- * @author Ken Krebs
- * @author Dave Syer
  */
 @Entity
 @Table(name = "visits")

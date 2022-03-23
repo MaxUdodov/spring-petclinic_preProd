@@ -40,9 +40,6 @@ import org.springframework.samples.petclinic.visit.Visit;
 /**
  * Simple business object representing a pet.
  *
- * @author Ken Krebs
- * @author Juergen Hoeller
- * @author Sam Brannen
  */
 @Entity
 @Table(name = "pets")

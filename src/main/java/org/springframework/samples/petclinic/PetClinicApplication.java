@@ -24,8 +24,6 @@ import org.springframework.cache.annotation.EnableCaching;
 /**
  * PetClinic Spring Boot Application.
  *
- * @author Dave Syer
- *
  */
 @SpringBootApplication(proxyBeanMethods = false)
 public class PetClinicApplication {

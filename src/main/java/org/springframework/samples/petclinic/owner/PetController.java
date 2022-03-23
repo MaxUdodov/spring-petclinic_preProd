@@ -25,11 +25,6 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.Collection;
 
-/**
- * @author Juergen Hoeller
- * @author Ken Krebs
- * @author Arjen Poutsma
- */
 @Controller
 @RequestMapping("/owners/{ownerId}")
 class PetController {
