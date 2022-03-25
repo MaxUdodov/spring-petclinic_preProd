@@ -1,3 +1,5 @@
+PetClinic is an application created to demonstrate the functionality of Spring. Using it functionality, I expanding this application and adding new features.
+
 # Spring PetClinic Sample Application [![Build Status](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml/badge.svg)](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml)
 
 ## Understanding the Spring Petclinic application with a few diagrams
