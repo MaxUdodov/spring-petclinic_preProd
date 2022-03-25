@@ -91,6 +91,7 @@ class VisitController {
 		return this.vets.findVetTypes();
 	}
 
+// Added functional for change visits
 	@PostMapping("/owners/{ownerId}/pets/{petId}/visits/{visitId}/edit")
 	public String processEditVisitForm(@Valid Visit visit, @PathVariable("visitId") int visitId,
 									   @RequestParam(value = "action") String action, BindingResult result) {
@@ -110,6 +111,7 @@ class VisitController {
 		}
 	}
 
+	// Added functional for change visits
 	@GetMapping("/owners/{ownerId}/pets/{petId}/visits/{visitId}/edit")
 	public String initEditVisitForm(@PathVariable("visitId") int visitId,
 									@PathVariable("ownerId") int ownerId, Map<String, Object> model) {
@@ -121,6 +123,7 @@ class VisitController {
 		return "pets/createOrUpdateVisitForm";
 	}
 
+	// Added functional for change visits
 	@GetMapping("/owners/{ownerId}/pets/{petId}/visits/{visitId}/return")
 	public String initReturnVisitForm(@PathVariable("visitId") int visitId) {
 
